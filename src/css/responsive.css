@@ -1,0 +1,81 @@
+@media (max-width: 1199px) {
+    body {
+        background: radial-gradient(circle, rgb(174, 180, 0) 0%, rgb(219, 146, 0) 99%);
+        color: white;
+    }
+
+    .fundo-img {
+        display: none;
+    }
+
+    .header .logo-img {
+        border: 1px solid rgb(46, 46, 46);
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container .content {
+        text-align: center;
+    }
+
+    .container .content .titulo-img, .container .personagem-img {
+        width: 300px;
+    }
+
+    .container .content .txt {
+        margin: 15px auto;
+    }
+    
+    .container .content .abrir-modal {
+        margin-bottom: 20px;
+    } 
+
+    .modal .conteudo-modal iframe {
+        border-width: 0;
+        width: 370px;
+        height: 208px;
+    }
+
+    .container .content h1 {
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .personagem .header-personagem {
+        width: 96vw;
+    }
+
+    .personagem .header-personagem div {
+        width: 77px;
+    }
+
+    .personagem .personagem-card {
+        width: 96vw
+    }
+
+    .personagem .personagem-card ul li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 696px) {
+    .container .content .characters-list li:nth-child(9) {
+        width: 163px;
+    }
+}
+
+@media (max-width: 518px) {
+    .container .content .characters-list li:nth-child(10) {
+        width: 163px;
+    }
+
+    .container .content .characters-list li:nth-child(10) img {
+        width: 140px;
+        height: 165px;
+        padding: 0;
+        margin: 17px 0px 18px 0px;
+    }
+}

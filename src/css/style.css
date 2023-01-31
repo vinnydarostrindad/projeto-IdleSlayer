@@ -1,0 +1,141 @@
+@import "reset.css";
+
+body {
+    background-color: black;
+    color: rgb(204, 204, 204);
+    font-family: poppins, sans-serif;
+}
+
+.fundo-img {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-img img {
+    width: 95vw;
+    height: 100vh;
+}
+
+.fundo-img::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 0;
+    max-width: 1150px;
+    margin: 0 auto
+}
+
+.header .logo-img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+.header .navbar .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header .navbar .menu li a {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+.header .navbar .menu li:hover a {
+    background: radial-gradient(circle, rgb(255, 196, 0) 0%, rgb(255, 133, 0) 99%);
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 35px auto 0;
+}
+
+.container .content {
+    text-align: justify;
+}
+
+.container .content h1 img {
+    width: 450px;
+}
+
+.container .content .txt {
+    width: 80%;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.container .content .abrir-modal {
+    margin-top: 5px;
+    background: radial-gradient(circle, rgb(255, 208, 0) 0%, rgb(255, 133, 0) 99%);
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border: 2px solid rgb(177, 86, 2);
+    transition-duration: 200ms;
+}
+
+.container .content .abrir-modal:hover {
+    transform: scale(1.1)
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.modal .conteudo-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+}
+
+.modal .conteudo-modal .fechar-modal {
+    color: rgb(255, 123, 0);
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal .conteudo-modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aparecer-modal {
+    visibility: visible;
+}
+

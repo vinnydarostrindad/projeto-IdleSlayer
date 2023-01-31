@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Slayer - FanMade</title>
+
+    <link rel="shortcut icon" href="src/image/logo.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/personagens.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    
+    <div class="fundo-img">
+        <div class="img">
+            <img src="src/image/fundo-sobre.jpg">
+        </div>
+    </div>
+
+    <header class="header" >
+        <img class="logo-img" src="src/image/logo.png" alt="Idle Slayer logo">
+        <nav class="navbar">
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Personagens</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container container-principal">
+        <article class="content">
+            <h1>Personagens</h1>
+            <h2>Conheça cada um deles</h2>
+            <ul class="characters-list">
+                <li class="personagem" id="roy" onclick="escolher(this)">
+                    <img src="src/image/personagens/Roy.webp" alt="Roy - personagem Idle Slayer">
+                    <p>Roy</p>
+                </li>
+                <li class="personagem" id="anna" onclick="escolher(this)">
+                    <img src="src/image/personagens/Anna.webp" alt="Anna - personagem Idle Slayer">
+                    <p>Anna</p>
+                </li>
+                <li class="personagem" id="minita" onclick="escolher(this)">
+                    <img src="src/image/personagens/Minita.webp" alt="Minita - personagem Idle Slayer">
+                    <p>Minita</p>
+                </li>
+                <li  class="personagem" id="skar" onclick="escolher(this)">
+                    <img src="src/image/personagens/Skar.webp" alt="Skar - personagem Idle Slayer">
+                    <p>Skar</p>
+                </li>
+                <li class="personagem" id="fayar" onclick="escolher(this)">
+                    <img src="src/image/personagens/Fayar.webp" alt="Fayar - personagem Idle Slayer">
+                    <p>Fayar</p>
+                </li>
+                <li class="personagem" id="benvolio" onclick="escolher(this)">
+                    <img src="src/image/personagens/Benvolio.webp" alt="Benvolio - personagem Idle Slayer">
+                    <p>Benvolio</p>
+                </li>
+                <li class="personagem" id="runhardt" onclick="escolher(this)">
+                    <img src="src/image/personagens/Runhardt.webp" alt="Runhardt - personagem Idle Slayer">
+                    <p>Runhardt</p>
+                </li>
+                <li class="personagem" id="agnis" onclick="escolher(this)">
+                    <img src="src/image/personagens/Agnis.webp" alt="Agnis - personagem Idle Slayer" >
+                    <p>Agnis</p>
+                </li>
+                <li class="personagem" id="kristof" onclick="escolher(this)">
+                    <img src="src/image/personagens/Kristof.webp" alt="Kristof - personagem Idle Slayer">
+                    <p>Kristof</p>
+                </li>
+                <li class="personagem" id="haskell" onclick="escolher(this)">
+                    <img src="src/image/personagens/Haskell.png" alt="Haskell - personagem Idle Slayer">
+                    <p>Haskell</p>
+                </li>
+                <li class="personagem" id="azure" onclick="escolher(this)">
+                    <img src="src/image/personagens/Azure.png" alt="Azure - personagem Idle Slayer">
+                    <p>Azure</p>
+                </li>
+            </ul>
+        </article>
+    </main>
+
+    <div class="container">
+        <div class="content personagem roy">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Roy</h2> 
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Roy.webp" alt="Roy - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>perosnagem já vem desbloqueado por padrão</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem anna">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Anna</h2>
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Anna.webp" alt="Anna - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>perosnagem já vem desbloqueado por padrão</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem minita">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>minita</h2>
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Minita.webp" alt="Minita- personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Para desbloquea-la você deve completar o Estágio Bônus Especial, ele aparece após a compra da melhoria "Caixa Aleatória Especial", que custa 2.5Sx Moedas, e após completar o Estágio Bônus uma vez. Depois de conseguir desbloquear a Minita, o Estágio Bônus parará de aparecer. A chance de encontrar o Portal especial numa Caixa Aleatória Especial é 7%.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem skar">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Skar</h2> 
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Skar.webp" alt="Skar - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Espero que você tenha sorte, pois para desbloquea-la é preciso jogar o Caça ao Baú, e se conseguir acertar o baú que ela está, você desbloqueara ela. Para liberar o Minigame Caça ao Báu, você deve completar a busca "A Chave para o Sucesso" e comprar a melhoria "Chave da Caça ao Baú", que custa 250Oc.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem fayar">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Fayar</h2>
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Fayar.webp" alt="Fayar - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Para desbloquea-lo você deve completar o Estágio Bônus 1, 2 ou 3 com o as Divindades das trevas "Modo Difícil" e a "Morte de Prata", para isso você deve comprar a Melhoria de Ascenção "Divindade" por 200.000SP e craftar o item "Livro do Pacto de Morte", para ter os dois ativados são 380 Pontos de Divindade. Acha que acabou!? Você ainda precisará ter a habilidade de conseguir completar sem cair e sem encostar nas lâminas. Boa sorte!</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem benvolio">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Benvolio</h2>
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Benvolio.webp" alt="Benvolio - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Para libera-lo é preciso ter a mochila, que custa 10.000SP na Árvore de Ascenção, pois é preciso craftar ele para desbloquear. Voce vai precisar craftar o item "Arma do Caçador de Bruxas", e pra craflar-lo é preciso 450 Madeira, 300 Asas de Morcego, 40 Presa de Yetis e 25 Tecidos de Fada, mas tambem é preciso 100Ud de moedas.
+                        </p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem runhardt">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Runhardt</h2>
+                <div></div>
+            </div>
+                        <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Runhardt.webp" alt="Runhardt - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Para liberar ele, você deve ter a melhoria de ascenção "Estágio Bônus 2", que custa 5.000SP, pois é preciso comlpetar o Estágio Bônus 2 se quiser ter ele.</p>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="content personagem agnis">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Agnis</h2>
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Agnis.webp" alt="Agnis - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Para desbloquear ela, é preciso tempo, paciência e dedicação, pois é preciso completar 100 Estágios Bônus, pode ser o 1, 2 ou 3, você só precisa completar 100. Provavelmente vôce irá libera-la jogando normalmente, então não se preocupe.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem kristof">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Kristof</h2>
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Kristof.webp" alt="Kristof - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Se quiser ter esse aqui, é preciso esperar até o natal. Se você estiver no natal, é sua chance de libera-lo, mas espero que tenha 75 Joias da Alma se quiser fazer isso. Caso não tenha, complete as Buscas Diárias, para obter essas buscas, fabrique o item "Diário" que precisa de 50 Asas de Morcego, 15 Tecidos de Goblin, e 20 Raizes, além de 50Sp de moedas, cada busca que fizer, você ganhará um Ovo de Dragão. Que dragão é esse? Ninguém sabe, pelo menos quem fez essa página ainda não. Então abrindo esses ovos, você terá a chance de ganhar Joias da Alma. Mas se achar mais fácil, você pode compra-las na loja. O Kristof te dará 15% de Bônus de Moeda caso tenha ele equipado no natal.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem haskell">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Haskell</h2>
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Haskell.png" alt="Haskell - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Desbloqueie Haskell por 50 Joias de Alma na Loja de Alma. Caso não tenha, complete as Buscas Diárias, para obter essas buscas, fabrique o item "Diário" que precisa de 50 Asas de Morcego, 15 Tecidos de Goblin, e 20 Raizes, além de 50Sp de moedas, cada busca que fizer, você ganhará um Ovo de Dragão. Que dragão é esse? Ninguém sabe, pelo menos quem fez essa página ainda não. Então abrindo esses ovos, você terá a chance de ganhar Joias da Alma. Mas se achar mais fácil, você pode compra-las na loja. Haskell e Azure vçao ficar revezando na loja.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="content personagem azure">
+            <div class="header-personagem">
+                <button type="submit" onclick="voltar()">Voltar</button>
+                <h2>Azure</h2>
+                <div></div>
+            </div>
+            <div class="personagem-card">
+                <div class="img"><img src="src/image/personagens/Azure.png" alt="Azure - personagem Idle Slayer"></div>
+                <ul>
+                    <li>
+                        <h3>Como desbloquear :</h3>
+                        <p>Desbloqueie Azure por 50 Joias da Alma na Loja de Alma. Não tem joia o suficiente, vai no Haskell ou no Kristof que eu explico, fiquei com preguiça de escrever denovo.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+
+    <script src="src/js/personagens.js"></script>
+</body>
+</html>

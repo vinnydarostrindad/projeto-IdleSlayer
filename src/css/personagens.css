@@ -1,0 +1,255 @@
+@import "reset.css";
+
+body {
+    background-color: black;
+    color: rgb(131 64 25);
+    font-family: poppins, sans-serif;
+}
+
+.fundo-img {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-img img {
+    width: 95vw;
+    height: 100vh;
+}
+
+.fundo-img::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 0;
+    max-width: 1150px;
+    margin: 0 auto
+}
+
+.header .logo-img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+.header .navbar .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header .navbar .menu li a {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+.header .navbar .menu li:hover a {
+    background: radial-gradient(circle, rgb(255, 196, 0) 0%, rgb(255, 133, 0) 99%);
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.container .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container .content h1 {
+    color: rgba(218,211,94,1);
+    font-family: silkscreen, poppins, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 4px 3px 0px rgb(133 76 47), -3px -3px 0px rgb(21 12 28), -3px 3px 0px rgb(21 12 28), 0px 6px 0px rgb(21 12 28), 3px 0px 0px rgb(21 12 28), -3px 2px 0px rgb(21 12 28), 8px 6px 0px rgb(21 12 28), 8px 1px 0px rgb(21 12 28), 3px -3px 0px rgb(21 12 28), 8px 2px 0px rgb(21 12 28);
+}
+
+.container .content h2 {
+    color: rgba(218,211,94,1);
+    font-family: silkscreen, poppins, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 3px 2px 0px rgb(133 76 47), 3px 0px rgb(133 76 47), -3px 0px 0px rgb(23 12 28), -3px -3px 0px rgb(21 12 28), 0px -3px 0px rgb(21 12 28), 6px -3px 0px rgb(21 12 28), -3px 2px 0px rgb(21 12 28), 0px 5px 0px rgb(21 12 28), 3px 5px 0px rgb(21 12 28), 3px -3px 0px rgb(21 12 28), 6px 2px 0px rgb(21 12 28), 6px 5px 0px rgb(21 12 28), 6px 0px 0px rgb(21 12 28)
+}
+
+.container .content .characters-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container .content .characters-list li {
+    background: radial-gradient(circle, rgb(255, 196, 0) 0%, rgb(255, 133, 0) 100%);
+    border: 10px solid rgb(255, 110, 16);
+    width: 163px;
+    cursor: pointer;
+    color: rgb(131 64 25);
+}
+
+.container .content .characters-list li:hover {
+    background: radial-gradient(circle, rgb(255, 234, 117) 0%, rgb(255, 120, 0) 100%);
+}
+
+.container .content .characters-list li:last-child, .container .content .characters-list li:nth-child(10), .container .content .characters-list li:nth-child(9) {
+    width: 222.1px;
+}
+
+.container .content .characters-list li img {
+    height: 200px;
+    padding: 15px;
+}
+
+.container .content .characters-list li p {
+    margin: -30px 5px 5px 5px;
+}
+
+.container .content .characters-list li:last-child p, .container .content .characters-list li:nth-child(10) p, .container .content .characters-list li:nth-child(9) p {
+    margin: -17px 5px 5px 5px;
+}
+
+.container.fechar {
+    display: none;
+}
+
+.content.personagem {
+    text-align: center;
+    max-width: none;
+}
+
+.personagem .header-personagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 75vw;
+    margin: 35px auto 0;
+}
+
+.personagem .header-personagem button {
+    background: radial-gradient(circle, rgb(255, 196, 0) 0%, rgb(255, 133, 0) 100%);
+    border: 4px double rgb(119, 64, 19);
+    color: rgb(131 64 25);
+    text-shadow: 0 0 5px rgb(249 112 0);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.personagem .header-personagem div {
+    width: 60px;
+    height: 47px;
+}
+
+.personagem .personagem-card {
+    background: radial-gradient(circle, rgb(255, 196, 0) 0%, rgb(255, 133, 0) 100%);
+    border: 10px solid rgb(249, 112, 0);
+    width: 75vw;
+    margin: 15px auto;
+}
+
+.personagem .personagem-card .img {
+    border-bottom: 30px double rgb(249, 112, 0);
+}
+
+.personagem .personagem-card img {
+    height: 200px;
+    margin-bottom: -15px;
+}
+
+.personagem .personagem-card ul li {
+    width: 80%;
+    margin: 10px auto;
+    text-align: justify;
+    color: rgb(131 64 25);
+}
+
+.personagem .personagem-card ul li > :first-of-type {
+    display: inline;
+}
+
+.personagem .personagem-card ul li p {
+    font-size: 17px;
+    margin: 0 0 0 5px;
+    
+}
+
+.skar .personagem-card .img img {
+    margin-left: 35px;
+}
+
+.kristof .personagem-card .img img, .haskell .personagem-card .img img, .azure .personagem-card .img img {
+    height: 160px;
+}
+
+.kristof .personagem-card .img img, .haskell .personagem-card .img img {
+    margin-top: 5px;
+}
+
+.kristof .personagem-card .img , .haskell .personagem-card .img, .azure .personagem-card .img {
+    height: 200px;
+}
+
+.roy, .anna, .minita, .skar, .fayar, .benvolio, .runhardt, .agnis, .kristof, .haskell, .azure {
+    display: none;
+}
+
+.roy.abrir {
+    display: block;
+}
+
+.anna.abrir {
+    display: block;
+}
+
+.minita.abrir {
+    display: block;
+}
+
+.skar.abrir {
+    display: block;
+}
+
+.fayar.abrir {
+    display: block;
+}
+
+.benvolio.abrir {
+    display: block;
+}
+
+.runhardt.abrir {
+    display: block;
+}
+
+.agnis.abrir {
+    display: block;
+}
+
+.kristof.abrir {
+    display: block;
+}
+
+.haskell.abrir {
+    display: block;
+}
+
+.azure.abrir {
+    display: block;
+}
+
