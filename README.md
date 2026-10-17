@@ -1,6 +1,7 @@
 # Projeto Idle Slayer - Página de Fã
 
 Este projeto foi desenvolvido com o objetivo de praticar e demonstrar minhas habilidades com **HTML**, **CSS** e **JavaScript puro**, recriando uma interface inspirada no jogo *Idle Slayer* — um dos meus jogos favoritos.
+- **DEMO**: https://vinnydarostrindad.github.io/projeto-IdleSlayer/
 
 ## 🔹 Funcionalidades
 
@@ -26,4 +27,4 @@ Além de homenagear um jogo que gosto muito, o projeto foi criado para demonstra
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/vinnydarostrindad/projeto-IdleSlayer.git
